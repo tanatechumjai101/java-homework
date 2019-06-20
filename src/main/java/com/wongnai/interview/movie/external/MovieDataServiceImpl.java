@@ -17,12 +17,33 @@ public class MovieDataServiceImpl implements MovieDataService {
 	@Autowired
 	private ObjectMapper objectMapper;
 
+	public static String getMovieDataUrl() {
+		return MOVIE_DATA_URL;
+	}
+
+	public RestOperations getRestTemplate() {
+		return restTemplate;
+	}
+
+	public ObjectMapper getObjectMapper() {
+		return objectMapper;
+	}
+
+	public void setRestTemplate(RestOperations restTemplate) {
+		this.restTemplate = restTemplate;
+	}
+
+	public void setObjectMapper(ObjectMapper objectMapper) {
+		this.objectMapper = objectMapper;
+	}
+
 	@Override
 	public MoviesResponse fetchAll() {
 		//TODO:
 		// Step 1 => Implement this method to download data from MOVIE_DATA_URL and fix any error you may found.
 		// Please noted that you must only read data remotely and only from given source,
 		// do not download and use local file or put the file anywhere else.
+
 
 		return null;
 	}

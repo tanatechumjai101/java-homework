@@ -1,23 +1,14 @@
 package com.wongnai.interview.movie.external;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.fasterxml.jackson.core.type.TypeReference;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestOperations;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.awt.*;
-import java.io.BufferedReader;
 import java.io.*;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @Component
 public class MovieDataServiceImpl implements MovieDataService {
@@ -26,9 +17,6 @@ public class MovieDataServiceImpl implements MovieDataService {
     public static final String MOVIE_DATA_URL
             = "https://raw.githubusercontent.com/prust/wikipedia-movie-data/master/movies.json";
 
-    private MoviesResponse moviesResponse;
-
-    private MovieData movieData;
 
     @Autowired
     private RestOperations restTemplate;
@@ -69,9 +57,9 @@ public class MovieDataServiceImpl implements MovieDataService {
 //            URL obj = new URL(getMovieDataUrl());
 //            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 //            int responseCode = con.getResponseCode();
-////            con.setRequestMethod("GET");
-////            con.setRequestProperty("title","Glorious");
-////            System.out.println("\nSending 'GET' request to URL : " + getMovieDataUrl());
+//            con.setRequestMethod("GET");
+//            con.setRequestProperty("title","Glorious");
+//            System.out.println("\nSending 'GET' request to URL : " + getMovieDataUrl());
 //            System.out.println("Response Code : " + responseCode);
 //            BufferedReader in = new BufferedReader((new InputStreamReader(con.getInputStream())));
 //            String inputLine;
@@ -80,38 +68,39 @@ public class MovieDataServiceImpl implements MovieDataService {
 //                response.append(inputLine);
 //            }
 //            in.close();
-////            System.out.println(response.toString());
+//            System.out.println(response.toString());
 //
 //            JSONObject jsonObject = new JSONObject(getMovieDataUrl());
 //            JSONArray jsonArray = jsonObject.getJSONArray("title");
 //            for (int i=0;i < jsonArray.length();i++){
 //                JSONObject jsonObject1 = jsonArray.getJSONObject(i);
-////                MovieDataServiceImpl movieDataService = new MovieDataServiceImpl();
+//                MovieDataServiceImpl movieDataService = new MovieDataServiceImpl();
 //                movieData.setTitle( jsonObject1.getString("title"));
 //
 //            }
 //
-////            JSONArray jsonArray = jsonObject.getJSONArray("title");
-////            System.out.println(jsonArray);
-////            System.out.println("Size = "+jsonArray.length());
+//            JSONArray jsonArray = jsonObject.getJSONArray("title");
+//            System.out.println(jsonArray);
+//            System.out.println("Size = "+jsonArray.length());
 //
-////            movieData.setTitle(jsonArray.toString());
-////            moviesResponse.getMovieData(movieData.getTitle());
+//            movieData.setTitle(jsonArray.toString());
+//            moviesResponse.getMovieData(movieData.getTitle());
 //
 //        } catch (Exception e) {
 //            System.out.println(e);
 //        }
 
-//        objectMapper = new ObjectMapper();
+        MoviesResponse moviesResponse = new MoviesResponse();
+        ObjectMapper objectMapper = getObjectMapper();
+        ResponseEntity<String> responseEntity = getRestTemplate().getForEntity(getMovieDataUrl(),String.class);
 
         try{
-            movieData = objectMapper.readValue(new URL(getMovieDataUrl()),MovieData.class);
+            moviesResponse = objectMapper.readValue(responseEntity.getBody(),new TypeReference<MoviesResponse>(){});
 
-        }catch (IOException e){
-            e.printStackTrace();
+        }catch (IOException ex){
         }
 
 
-        return null;
+        return moviesResponse;
     }
 }

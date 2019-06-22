@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67099d3-0a7d-4ce8-a620-277355b67ea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-dojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-dojo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MoviesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MoviesResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wongnai/interview/movie/external/MovieDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wongnai/interview/movie/external/MovieDataServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wongnai/interview/movie/external/MoviesResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wongnai/interview/movie/external/MoviesResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.MoviesControllerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.MoviesControllerIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.InvertedIndexMovieSearchServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.InvertedIndexMovieSearchServiceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.SimpleMovieSearchServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wongnai.interview.movie.search.SimpleMovieSearchServiceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.MoviesControllerIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.MoviesControllerIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.InvertedIndexMovieSearchServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.InvertedIndexMovieSearchServiceIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.SimpleMovieSearchServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wongnai.interview.movie.search.SimpleMovieSearchServiceIntegrationTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,11 +21,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="708">
+              <caret line="97" column="112" lean-forward="true" selection-start-line="97" selection-start-column="112" selection-end-line="97" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1561185460499" expanded="true" signature="2068:2176" ph="..." />
+                <marker date="1561189126666" expanded="true" signature="1757:1861" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MoviesResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,8 +90,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MoviesResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -370,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MovieDataServiceImplIntegrationTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wongnai.interview.Application" />
       <module name="cart-dojo" />
@@ -384,8 +369,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieDataServiceImplIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cart-dojo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wongnai.interview.movie.external.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wongnai.interview.movie.external" />
+      <option name="MAIN_CLASS_NAME" value="com.wongnai.interview.movie.external.MovieDataServiceImplIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cart-dojo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wongnai.interview.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wongnai.interview.movie" />
+      <option name="MAIN_CLASS_NAME" value="com.wongnai.interview.movie.MoviesControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieDataServiceImplIntegrationTest" />
+        <item itemvalue="JUnit.MoviesControllerIntegrationTest" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -434,6 +451,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29392973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,7 +467,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.319802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.319802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32970297" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32970297" />
@@ -816,23 +834,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/client/RestOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2538">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MoviesResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/TypeReference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding>
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wongnai/interview/movie/external/MovieDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="708">
+          <caret line="97" column="112" lean-forward="true" selection-start-line="97" selection-start-column="112" selection-end-line="97" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1561185460499" expanded="true" signature="2068:2176" ph="..." />
+            <marker date="1561189126666" expanded="true" signature="1757:1861" ph="..." />
           </folding>
         </state>
       </provider>

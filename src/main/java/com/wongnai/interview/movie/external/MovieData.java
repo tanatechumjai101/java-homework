@@ -3,13 +3,16 @@ package com.wongnai.interview.movie.external;
 import java.util.List;
 
 public class MovieData {
+
 	private String title;
 	private int year;
 	private List<String> cast;
 	private List<String> genres;
 
 	public MovieData() {
+
 	}
+
 
 	public String getTitle() {
 		return title;

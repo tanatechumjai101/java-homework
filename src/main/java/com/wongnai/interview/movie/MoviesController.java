@@ -36,4 +36,5 @@ public class MoviesController {
 	public List<Movie> searchTitleWithKeyword(@RequestParam("q") String keyword) {
 		return movieSearchService.search(keyword);
 	}
+
 }

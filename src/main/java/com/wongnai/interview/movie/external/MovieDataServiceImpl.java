@@ -1,16 +1,22 @@
 package com.wongnai.interview.movie.external;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestOperations;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 public class MovieDataServiceImpl implements MovieDataService {
@@ -45,6 +51,14 @@ public class MovieDataServiceImpl implements MovieDataService {
         this.objectMapper = objectMapper;
     }
 
+    public MovieDataServiceImpl(RestOperations restTemplate, ObjectMapper objectMapper) {
+        this.restTemplate = restTemplate;
+        this.objectMapper = objectMapper;
+    }
+
+    @Autowired
+    private MoviesResponse moviesResponse;
+
     @Override
     public MoviesResponse fetchAll() {
 
@@ -57,17 +71,26 @@ public class MovieDataServiceImpl implements MovieDataService {
             URL obj = new URL(getMovieDataUrl());
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             int responseCode = con.getResponseCode();
-            System.out.println("\nSending 'GET' request to URL : " + getMovieDataUrl());
-            System.out.println("Response Code : "+responseCode);
+//            con.setRequestMethod("GET");
+//            con.setRequestProperty("title","Glorious");
+//            System.out.println("\nSending 'GET' request to URL : " + getMovieDataUrl());
+            System.out.println("Response Code : " + responseCode);
             BufferedReader in = new BufferedReader((new InputStreamReader(con.getInputStream())));
             String inputLine;
             StringBuffer response = new StringBuffer();
-            while ((inputLine = in.readLine())!= null){
+            while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
             }
             in.close();
+//            System.out.println(response.toString());
 
-            System.out.println(response.toString());
+            JSONObject jsonObject = new JSONObject(String.valueOf(response));
+            JSONArray jsonArray = jsonObject.getJSONArray("title");
+            System.out.println(jsonArray);
+            System.out.println("Size = "+jsonArray.length());
+
+            moviesResponse.getMovieData(jsonArray.toString());
+
         } catch (Exception e) {
             System.out.println(e);
         }

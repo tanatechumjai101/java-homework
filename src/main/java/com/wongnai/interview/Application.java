@@ -18,6 +18,6 @@ public class Application implements WebServerFactoryCustomizer<ConfigurableWebSe
 
 	@Override
 	public void customize(ConfigurableWebServerFactory factory) {
-		factory.setPort(8085);
+		factory.setPort(8080);
 	}
 }

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 2.762 s <<< FAILURE! - in com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest
-testFindSingleKeywordContainInTitleWithCaseInsensitive(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.137 s  <<< FAILURE!
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 2.114 s <<< FAILURE! - in com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest
+testFindSingleKeywordContainInTitleWithCaseInsensitive(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.106 s  <<< FAILURE!
 java.lang.AssertionError: 
 
 Expected: <7>
@@ -10,7 +10,7 @@ Expected: <7>
 	at com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.assertGloriousMovieKeyword(DatabaseMovieSearchServiceIntegrationTest.java:30)
 	at com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.testFindSingleKeywordContainInTitleWithCaseInsensitive(DatabaseMovieSearchServiceIntegrationTest.java:67)
 
-testPartialWordMustMatchMovies(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.013 s  <<< FAILURE!
+testPartialWordMustMatchMovies(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.007 s  <<< FAILURE!
 java.lang.AssertionError: 
 
 Expected: <7>
@@ -18,7 +18,7 @@ Expected: <7>
 	at com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.assertGloriousMovieKeyword(DatabaseMovieSearchServiceIntegrationTest.java:30)
 	at com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest.testPartialWordMustMatchMovies(DatabaseMovieSearchServiceIntegrationTest.java:45)
 
-testFindSingleKeywordContainInTitle(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.014 s  <<< FAILURE!
+testFindSingleKeywordContainInTitle(com.wongnai.interview.movie.search.DatabaseMovieSearchServiceIntegrationTest)  Time elapsed: 0.006 s  <<< FAILURE!
 java.lang.AssertionError: 
 
 Expected: <7>

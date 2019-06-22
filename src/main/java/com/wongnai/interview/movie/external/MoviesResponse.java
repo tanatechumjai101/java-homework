@@ -8,11 +8,10 @@ import java.util.stream.Stream;
 public class MoviesResponse extends ArrayList<MovieData> {
 
     @Autowired
-    private MovieDataService movieDataService;
+    private MovieData movieData;
 
-
-    public List<MovieData> movieData = new ArrayList<>(Arrays.asList(
-            new MovieData()
+    public List<MovieData> movieData1 = new ArrayList<>(Arrays.asList(
+            new MovieData().getTitle()
     ));
 
 
@@ -23,7 +22,7 @@ public class MoviesResponse extends ArrayList<MovieData> {
 //    }
 
     public Stream<MovieData> getMovieData(String title){
-        return movieData.stream().filter(t -> t.getTitle().equals(title));
+        return movieData1.stream().filter(t -> t.getTitle().equals(title));
     }
 
 

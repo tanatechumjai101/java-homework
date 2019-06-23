@@ -1,6 +1,5 @@
 package com.wongnai.interview.movie.sync;
 
-import javax.swing.text.html.parser.Entity;
 import javax.transaction.Transactional;
 
 import com.wongnai.interview.movie.Movie;
@@ -11,9 +10,6 @@ import org.springframework.stereotype.Component;
 
 import com.wongnai.interview.movie.MovieRepository;
 import com.wongnai.interview.movie.external.MovieDataService;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Component
 public class MovieDataSynchronizer {
@@ -31,5 +27,6 @@ public class MovieDataSynchronizer {
 		for(MovieData movieData : moviesResponse){
 				movieRepository.save(new Movie(movieData.getTitle(),movieData.getCast()));
 		}
+
 	}
 }

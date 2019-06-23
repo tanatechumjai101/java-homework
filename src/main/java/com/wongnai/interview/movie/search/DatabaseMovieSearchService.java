@@ -3,6 +3,7 @@ package com.wongnai.interview.movie.search;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.wongnai.interview.movie.external.MoviesResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,17 +23,7 @@ public class DatabaseMovieSearchService implements MovieSearchService {
 		// MovieDataSynchronizer.forceSync() to load all movie data, using MovieDataService, into MovieRepository.
 		// Do not change @Component annotation on this class
 
-//		List<Movie> movieTitle = movieRepository.findByNameContains(queryText);
-//		for(int i=0;i<movieTitle.size();i++){
-//			String splitName[] = movieTitle.get(i).getName().split(" ");
-//			for(int j=0;j<splitName.length;j++){
-//				if(splitName[j].toLowerCase().equals(queryText.toLowerCase())){
-//					movieRepository.findByNameContains(queryText);
-//				}
-//
-//			}
-//		}
-//
-		return movieRepository.findByNameContains(queryText);
+
+		return movieRepository.findByNameContains(queryText.toLowerCase());
 	}
 }

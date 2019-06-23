@@ -1,5 +1,6 @@
 package com.wongnai.interview.movie.search;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,23 @@ public class DatabaseMovieSearchService implements MovieSearchService {
 		// This database search method must use only MovieRepository.findByNameContains(String), you also have to implement
 		// MovieDataSynchronizer.forceSync() to load all movie data, using MovieDataService, into MovieRepository.
 		// Do not change @Component annotation on this class
-		return movieRepository.findByNameContains(queryText);
+
+		List<Movie> movieTitle = movieRepository.findByNameContains(queryText);
+		String newText = "";
+//		for(int i=0;i<movieTitle.size();i++){
+//			String splitName[] = movieTitle.get(i).getName().split(" ");
+//			for(int j=0;j<splitName.length;j++){
+//				if(splitName[j].toLowerCase().equals(queryText.toLowerCase())){
+//					 newText = movieTitle.get(i).getName();
+//					movieRepository.findByNameContains(newText);
+//				}
+//
+//			}
+//		}
+		for(int i=0;i<movieTitle.size();i++){
+			newText = movieRepository.findByNameContains(queryText).get(i).getName();
+
+		}
+		return movieRepository.findByNameContains(newText);
 	}
 }

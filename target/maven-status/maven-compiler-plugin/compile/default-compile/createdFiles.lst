@@ -13,3 +13,4 @@ com/wongnai/interview/movie/MovieRepository.class
 com/wongnai/interview/movie/MovieSearchService.class
 com/wongnai/interview/config/MovieConfiguration.class
 com/wongnai/interview/movie/Movie.class
+com/wongnai/interview/movie/external/MovieDataServiceImpl$1.class

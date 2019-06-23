@@ -4,6 +4,8 @@ import javax.swing.text.html.parser.Entity;
 import javax.transaction.Transactional;
 
 import com.wongnai.interview.movie.Movie;
+import com.wongnai.interview.movie.external.MovieData;
+import com.wongnai.interview.movie.external.MoviesResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,9 +26,10 @@ public class MovieDataSynchronizer {
 	@Transactional
 	public void forceSync() {
 		//TODO: implement this to sync movie into repository
-//		movieDataService.fetchAll();
 
-		movieRepository.findByNameContains(movieDataService.fetchAll().toString());
-
+		MoviesResponse moviesResponse = movieDataService.fetchAll();
+		for(MovieData movieData : moviesResponse){
+				movieRepository.save(new Movie(movieData.getTitle(),movieData.getCast()));
+		}
 	}
 }

@@ -22,22 +22,17 @@ public class DatabaseMovieSearchService implements MovieSearchService {
 		// MovieDataSynchronizer.forceSync() to load all movie data, using MovieDataService, into MovieRepository.
 		// Do not change @Component annotation on this class
 
-		List<Movie> movieTitle = movieRepository.findByNameContains(queryText);
-		String newText = "";
+//		List<Movie> movieTitle = movieRepository.findByNameContains(queryText);
 //		for(int i=0;i<movieTitle.size();i++){
 //			String splitName[] = movieTitle.get(i).getName().split(" ");
 //			for(int j=0;j<splitName.length;j++){
 //				if(splitName[j].toLowerCase().equals(queryText.toLowerCase())){
-//					 newText = movieTitle.get(i).getName();
-//					movieRepository.findByNameContains(newText);
+//					movieRepository.findByNameContains(queryText);
 //				}
 //
 //			}
 //		}
-		for(int i=0;i<movieTitle.size();i++){
-			newText = movieRepository.findByNameContains(queryText).get(i).getName();
-
-		}
-		return movieRepository.findByNameContains(newText);
+//
+		return movieRepository.findByNameContains(queryText);
 	}
 }

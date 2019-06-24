@@ -25,7 +25,7 @@ public class MovieDataSynchronizer {
 
 		MoviesResponse moviesResponse = movieDataService.fetchAll();
 		for(MovieData movieData : moviesResponse){
-				movieRepository.save(new Movie(movieData.getTitle(),movieData.getCast()));
+			movieRepository.save(new Movie(movieData.getTitle(),movieData.getCast()));
 		}
 
 	}
